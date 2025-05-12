@@ -13,32 +13,23 @@ const LandingPage = () => {
         <>
             <TopNav />
             <div
-                style={{
-                    background:
-                        "url(https://static.wixstatic.com/media/677348_36fd92f155594a1ca1e5a120950259e0f000.jpg/v1/fill/w_1190,h_646,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/677348_36fd92f155594a1ca1e5a120950259e0f000.jpg) no-repeat center",
-                    height: "100vh",
-                    backgroundSize: "cover",
-                }}
+                id="top-navbar"
                 className="d-flex"
             >
                 <Container fluid className="d-flex justify-content-center align-items-center">
                     <Row className="text-center">
                         <Col md="12" className="mb-4">
-                            <Button tag="a" href="tel:1-301-529-9351" color="success">Book Now</Button>
-                            {/* <Button color="success">Book Now</Button> */}
+                            <Button tag="a" href="tel:1-301-529-9351" color="success">
+                                <i className="fas fa-phone" />{" "}
+                                Book Now
+                            </Button>
                         </Col>
                         <Col md="12">
-                            <Button tag="a" href="tel:1-301-529-9351" color="primary">We offer gift card</Button>
+                            <Button style={{ maxWidth: "200px" }} tag="a" href="tel:1-301-529-9351" color="primary">We offer gift card and membership packages</Button>
                         </Col>
                     </Row>
                 </Container>
             </div>
-            {/* <img
-                className="d-block w-100"
-                style={{ objectFit: "cover" }}
-                // src={image0}
-                src="https://static.wixstatic.com/media/677348_36fd92f155594a1ca1e5a120950259e0f000.jpg/v1/fill/w_1190,h_646,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/677348_36fd92f155594a1ca1e5a120950259e0f000.jpg"
-            /> */}
             <AboutUs />
             <Services />
             <Gallery />

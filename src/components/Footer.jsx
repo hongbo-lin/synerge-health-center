@@ -16,17 +16,46 @@ const Footer = () => {
                         <h4 className="pt-5">Contacts</h4>
                         <List type="unstyled">
                             <li>
-                                <i className="fas fa-phone" />
-                                <span className="ms-2">(301) 529-9351</span>
+                                <Row>
+                                    <Col className="col-1">
+                                        <i className="fas fa-phone" />
+                                    </Col>
+                                    <Col className="col-11">
+                                        <span className="">(301) 529-9351</span>
+                                    </Col>
+                                </Row>
+                                {/* <i className="fas fa-phone" />
+                                <span className="ms-2">(301) 529-9351</span> */}
                             </li>
                             <li>
-                                <i className="fas fa-location-dot" />
+                                <Row>
+                                    <Col className="col-1">
+                                        <i className="fas fa-location-dot" />
+                                    </Col>
+                                    <Col className="col-11">
+                                        <a
+                                            className="text-white text-decoration-none"
+                                            href="https://maps.app.goo.gl/i3383s3AgxhEeAGA8"
+                                        >
+                                            <span>7101 Democracy Blvd unit 1292 & 1294</span>
+                                            <br />
+                                            <span>Bethesda, MD 20817</span>
+                                            <br />
+                                            <span>Next to Nordstrom Entrance</span>
+                                        </a>
+                                    </Col>
+                                </Row>
+                                {/* <i className="fas fa-location-dot" />
                                 <a
                                     className="ms-2 text-white text-decoration-none"
                                     href="https://maps.app.goo.gl/i3383s3AgxhEeAGA8"
                                 >
-                                    7101 Democracy Blvd, Bethesda, MD 20817
-                                </a>
+                                    <span>7101 Democracy Blvd unit 1292 & 1294</span>
+                                    <br />
+                                    <span className="pe-2">Bethesda, MD 20817</span>
+                                    <br />
+                                    <span className="pe-2">Next to Nordstrom Entrance</span>
+                                </a> */}
                                 <div style={{ width: "100%" }}>
                                     <iframe
                                         width="100%"
@@ -49,27 +78,27 @@ const Footer = () => {
                             <tbody>
                                 <tr className="table-black">
                                     <td>Mon</td>
-                                    <td>11:00 AM - 8:00 PM</td>
+                                    <td>10:00 AM - 9:00 PM</td>
                                 </tr>
                                 <tr>
                                     <td>Tue</td>
-                                    <td>11:00 AM - 8:00 PM</td>
+                                    <td>10:00 AM - 9:00 PM</td>
                                 </tr>
                                 <tr>
                                     <td>Wed</td>
-                                    <td>11:00 AM - 8:00 PM</td>
+                                    <td>10:00 AM - 9:00 PM</td>
                                 </tr>
                                 <tr>
                                     <td>Thu</td>
-                                    <td>11:00 AM - 8:00 PM</td>
+                                    <td>10:00 AM - 9:00 PM</td>
                                 </tr>
                                 <tr>
                                     <td>Fri</td>
-                                    <td>10:00 AM - 8:00 PM</td>
+                                    <td>10:00 AM - 9:00 PM</td>
                                 </tr>
                                 <tr>
                                     <td>Sat</td>
-                                    <td>10:00 AM - 8:00 PM</td>
+                                    <td>10:00 AM - 9:00 PM</td>
                                 </tr>
                                 <tr>
                                     <td>Sun</td>
@@ -80,42 +109,6 @@ const Footer = () => {
                     </Col>
                 </Row>
             </Container>
-            {/* <div className="container">
-                <div className="row">
-                    <div className="col-lg-4 mb-5 mb-lg-0">
-                        <h4 className="text-uppercase mb-4">Location</h4>
-                        <p className="lead mb-0">
-                            Montgomery Mall
-                            <br />
-                            7101 Democracy Blvd
-                            <br />
-                            Bethesda, MD 20817
-                        </p>
-                    </div>
-                    <div className="col-lg-4 mb-5 mb-lg-0">
-                        <h4 className="text-uppercase mb-4">Around the Web</h4>
-                        <a className="btn btn-outline-light btn-social mx-1" href="#!">
-                            <i className="fab fa-fw fa-facebook-f"></i>
-                        </a>
-                        <a className="btn btn-outline-light btn-social mx-1" href="#!">
-                            <i className="fab fa-fw fa-twitter"></i>
-                        </a>
-                        <a className="btn btn-outline-light btn-social mx-1" href="#!">
-                            <i className="fab fa-fw fa-linkedin-in"></i>
-                        </a>
-                        <a className="btn btn-outline-light btn-social mx-1" href="#!">
-                            <i className="fab fa-fw fa-dribbble"></i>
-                        </a>
-                    </div>
-                    <div className="col-lg-4">
-                        <h4 className="text-uppercase mb-4">About Freelancer</h4>
-                        <p className="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>.
-                        </p>
-                    </div>
-                </div>
-            </div> */}
         </footer>
     );
 };

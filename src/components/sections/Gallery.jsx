@@ -19,14 +19,14 @@ const Gallery = () => {
                         altText: "0",
                         src: image0,
                     },
-                    {
-                        altText: "0",
-                        src: image1,
-                    },
-                    {
-                        altText: "0",
-                        src: image2,
-                    },
+                    // {
+                    //     altText: "0",
+                    //     src: image1,
+                    // },
+                    // {
+                    //     altText: "0",
+                    //     src: image2,
+                    // },
                     {
                         altText: "0",
                         src: image3,
