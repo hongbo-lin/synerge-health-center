@@ -33,7 +33,7 @@ const FlipCard = (props) => {
                         </CardHeader>
                         <CardBody className="text-muted">
                             {src && <CardImg src={src} />}
-                            <CardText>{text}</CardText>
+                            <CardText className="mt-2">{text}</CardText>
                         </CardBody>
                     </div>
                     <div className="face back">
@@ -64,11 +64,13 @@ const Services = () => {
                 <FlipCard
                     name="Acupressure"
                     src={acupressure}
-                    text="Acupressure massage is a traditional healing practice rooted in Chinese medicine that involves applying pressure to specific points on the body to stimulate energy flow and promote holistic wellness."
+                    // text="Acupressure massage is a traditional healing practice rooted in Chinese medicine that involves applying pressure to specific points on the body to stimulate energy flow and promote holistic wellness."
+                    text="Acupressure massage involves applying pressure to specific points on the body, known as acupoints, to promote relaxation, reduce pain, and balance energy flow."
                     list={[
-                        "Relieve pain, especially neck and back pain, headaches",
+                        "Ease chronic pain such as back pain, neck pain and joint pain",
                         "Reduce stress and anxiety by stimulating the release of endorphins",
                         "Improve sleep quality by reducing stress and promoting relaxation",
+                        "Enhance blood flow and promotes the body's natural healing abilities",
                     ]}
                 />
                 <FlipCard
